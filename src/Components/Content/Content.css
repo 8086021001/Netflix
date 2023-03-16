@@ -1,0 +1,55 @@
+.row{
+    margin-left: 20px;
+    color: #1cd025;
+}
+.row > h2{
+    margin-left: 30px;
+}
+
+.posters{
+    display: flex;
+    padding-top: 30px;
+    overflow-x: scroll;
+    overflow-y:hidden ;
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+
+.poster{
+    max-height: 250px;
+    margin-right: 10px;
+
+}
+.smallPoster{
+    max-height: 160px;
+    margin-right: 10px;
+
+}
+
+.Movietitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f20d0d;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .poster:hover .Movietitle {
+    position: relative;
+    opacity: 1;
+  }
+  .smallPoster:hover .Movietitle {
+    position: relative;
+    opacity: 1;
+  }
